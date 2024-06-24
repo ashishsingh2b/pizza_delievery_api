@@ -5,6 +5,7 @@ from models import User
 from werkzeug.security import generate_password_hash,check_password_hash
 from fastapi_jwt_auth import AuthJWT
 from fastapi.encoders import jsonable_encoder
+from fastapi.exceptions import HTTPException
 
 auth_router = APIRouter(
     prefix='/auth',
